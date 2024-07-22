@@ -1,0 +1,3 @@
+/home/stevica/openGL_projects/breakout/build/CMakeFiles/my_opengl_project.dir
+/home/stevica/openGL_projects/breakout/build/CMakeFiles/edit_cache.dir
+/home/stevica/openGL_projects/breakout/build/CMakeFiles/rebuild_cache.dir
