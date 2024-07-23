@@ -153,6 +153,54 @@ game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/game.cpp.s
 .PHONY : game.cpp.s
 
+game_level.o: game_level.cpp.o
+.PHONY : game_level.o
+
+# target to build an object file
+game_level.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/game_level.cpp.o
+.PHONY : game_level.cpp.o
+
+game_level.i: game_level.cpp.i
+.PHONY : game_level.i
+
+# target to preprocess a source file
+game_level.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/game_level.cpp.i
+.PHONY : game_level.cpp.i
+
+game_level.s: game_level.cpp.s
+.PHONY : game_level.s
+
+# target to generate assembly for a file
+game_level.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/game_level.cpp.s
+.PHONY : game_level.cpp.s
+
+game_object.o: game_object.cpp.o
+.PHONY : game_object.o
+
+# target to build an object file
+game_object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/game_object.cpp.o
+.PHONY : game_object.cpp.o
+
+game_object.i: game_object.cpp.i
+.PHONY : game_object.i
+
+# target to preprocess a source file
+game_object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/game_object.cpp.i
+.PHONY : game_object.cpp.i
+
+game_object.s: game_object.cpp.s
+.PHONY : game_object.s
+
+# target to generate assembly for a file
+game_object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/game_object.cpp.s
+.PHONY : game_object.cpp.s
+
 glad.o: glad.c.o
 .PHONY : glad.o
 
@@ -249,6 +297,30 @@ shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/shader.cpp.s
 .PHONY : shader.cpp.s
 
+sprite_renderer.o: sprite_renderer.cpp.o
+.PHONY : sprite_renderer.o
+
+# target to build an object file
+sprite_renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.o
+.PHONY : sprite_renderer.cpp.o
+
+sprite_renderer.i: sprite_renderer.cpp.i
+.PHONY : sprite_renderer.i
+
+# target to preprocess a source file
+sprite_renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.i
+.PHONY : sprite_renderer.cpp.i
+
+sprite_renderer.s: sprite_renderer.cpp.s
+.PHONY : sprite_renderer.s
+
+# target to generate assembly for a file
+sprite_renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.s
+.PHONY : sprite_renderer.cpp.s
+
 stb_image.o: stb_image.cpp.o
 .PHONY : stb_image.o
 
@@ -309,6 +381,12 @@ help:
 	@echo "... game.o"
 	@echo "... game.i"
 	@echo "... game.s"
+	@echo "... game_level.o"
+	@echo "... game_level.i"
+	@echo "... game_level.s"
+	@echo "... game_object.o"
+	@echo "... game_object.i"
+	@echo "... game_object.s"
 	@echo "... glad.o"
 	@echo "... glad.i"
 	@echo "... glad.s"
@@ -321,6 +399,9 @@ help:
 	@echo "... shader.o"
 	@echo "... shader.i"
 	@echo "... shader.s"
+	@echo "... sprite_renderer.o"
+	@echo "... sprite_renderer.i"
+	@echo "... sprite_renderer.s"
 	@echo "... stb_image.o"
 	@echo "... stb_image.i"
 	@echo "... stb_image.s"

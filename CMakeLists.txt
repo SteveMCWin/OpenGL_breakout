@@ -17,7 +17,10 @@ add_executable(my_opengl_project
     game.cpp
     resource_manager.cpp
     shader.cpp
-    texture.cpp)
+    texture.cpp
+    sprite_renderer.cpp
+    game_object.cpp
+    game_level.cpp)
 
 # assimp/code/Common/material.cpp assimp/code/Common/Importer.h assimp/code/Common/Importer.cpp assimp/code/Common/scene.cpp
 

@@ -167,6 +167,48 @@ CMakeFiles/my_opengl_project.dir/texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_opengl_project.dir/texture.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stevica/openGL_projects/breakout/texture.cpp -o CMakeFiles/my_opengl_project.dir/texture.cpp.s
 
+CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.o: CMakeFiles/my_opengl_project.dir/flags.make
+CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.o: ../sprite_renderer.cpp
+CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.o: CMakeFiles/my_opengl_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stevica/openGL_projects/breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.o -MF CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.o.d -o CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.o -c /home/stevica/openGL_projects/breakout/sprite_renderer.cpp
+
+CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stevica/openGL_projects/breakout/sprite_renderer.cpp > CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.i
+
+CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stevica/openGL_projects/breakout/sprite_renderer.cpp -o CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.s
+
+CMakeFiles/my_opengl_project.dir/game_object.cpp.o: CMakeFiles/my_opengl_project.dir/flags.make
+CMakeFiles/my_opengl_project.dir/game_object.cpp.o: ../game_object.cpp
+CMakeFiles/my_opengl_project.dir/game_object.cpp.o: CMakeFiles/my_opengl_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stevica/openGL_projects/breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/my_opengl_project.dir/game_object.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_opengl_project.dir/game_object.cpp.o -MF CMakeFiles/my_opengl_project.dir/game_object.cpp.o.d -o CMakeFiles/my_opengl_project.dir/game_object.cpp.o -c /home/stevica/openGL_projects/breakout/game_object.cpp
+
+CMakeFiles/my_opengl_project.dir/game_object.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_opengl_project.dir/game_object.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stevica/openGL_projects/breakout/game_object.cpp > CMakeFiles/my_opengl_project.dir/game_object.cpp.i
+
+CMakeFiles/my_opengl_project.dir/game_object.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_opengl_project.dir/game_object.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stevica/openGL_projects/breakout/game_object.cpp -o CMakeFiles/my_opengl_project.dir/game_object.cpp.s
+
+CMakeFiles/my_opengl_project.dir/game_level.cpp.o: CMakeFiles/my_opengl_project.dir/flags.make
+CMakeFiles/my_opengl_project.dir/game_level.cpp.o: ../game_level.cpp
+CMakeFiles/my_opengl_project.dir/game_level.cpp.o: CMakeFiles/my_opengl_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stevica/openGL_projects/breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/my_opengl_project.dir/game_level.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_opengl_project.dir/game_level.cpp.o -MF CMakeFiles/my_opengl_project.dir/game_level.cpp.o.d -o CMakeFiles/my_opengl_project.dir/game_level.cpp.o -c /home/stevica/openGL_projects/breakout/game_level.cpp
+
+CMakeFiles/my_opengl_project.dir/game_level.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_opengl_project.dir/game_level.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stevica/openGL_projects/breakout/game_level.cpp > CMakeFiles/my_opengl_project.dir/game_level.cpp.i
+
+CMakeFiles/my_opengl_project.dir/game_level.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_opengl_project.dir/game_level.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stevica/openGL_projects/breakout/game_level.cpp -o CMakeFiles/my_opengl_project.dir/game_level.cpp.s
+
 # Object files for target my_opengl_project
 my_opengl_project_OBJECTS = \
 "CMakeFiles/my_opengl_project.dir/main.cpp.o" \
@@ -175,7 +217,10 @@ my_opengl_project_OBJECTS = \
 "CMakeFiles/my_opengl_project.dir/game.cpp.o" \
 "CMakeFiles/my_opengl_project.dir/resource_manager.cpp.o" \
 "CMakeFiles/my_opengl_project.dir/shader.cpp.o" \
-"CMakeFiles/my_opengl_project.dir/texture.cpp.o"
+"CMakeFiles/my_opengl_project.dir/texture.cpp.o" \
+"CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.o" \
+"CMakeFiles/my_opengl_project.dir/game_object.cpp.o" \
+"CMakeFiles/my_opengl_project.dir/game_level.cpp.o"
 
 # External object files for target my_opengl_project
 my_opengl_project_EXTERNAL_OBJECTS =
@@ -187,11 +232,14 @@ my_opengl_project: CMakeFiles/my_opengl_project.dir/game.cpp.o
 my_opengl_project: CMakeFiles/my_opengl_project.dir/resource_manager.cpp.o
 my_opengl_project: CMakeFiles/my_opengl_project.dir/shader.cpp.o
 my_opengl_project: CMakeFiles/my_opengl_project.dir/texture.cpp.o
+my_opengl_project: CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.o
+my_opengl_project: CMakeFiles/my_opengl_project.dir/game_object.cpp.o
+my_opengl_project: CMakeFiles/my_opengl_project.dir/game_level.cpp.o
 my_opengl_project: CMakeFiles/my_opengl_project.dir/build.make
 my_opengl_project: /usr/lib/x86_64-linux-gnu/libGLX.so
 my_opengl_project: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 my_opengl_project: CMakeFiles/my_opengl_project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stevica/openGL_projects/breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable my_opengl_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stevica/openGL_projects/breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable my_opengl_project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_opengl_project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

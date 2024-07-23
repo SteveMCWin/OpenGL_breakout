@@ -1,6 +1,6 @@
-CMakeFiles/my_opengl_project.dir/game.cpp.o: \
- /home/stevica/openGL_projects/breakout/game.cpp \
- /usr/include/stdc-predef.h /home/stevica/openGL_projects/breakout/game.h \
+CMakeFiles/my_opengl_project.dir/game_level.cpp.o: \
+ /home/stevica/openGL_projects/breakout/game_level.cpp \
+ /usr/include/stdc-predef.h \
  /home/stevica/openGL_projects/breakout/game_level.h \
  /home/stevica/openGL_projects/breakout/glad.h \
  /usr/include/KHR/khrplatform.h \
@@ -388,4 +388,4 @@ CMakeFiles/my_opengl_project.dir/game.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/sstream \
- /usr/include/c++/11/bits/sstream.tcc /usr/include/GLFW/glfw3.h
+ /usr/include/c++/11/bits/sstream.tcc

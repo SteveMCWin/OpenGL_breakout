@@ -366,6 +366,11 @@ CMakeFiles/my_opengl_project.dir/main.cpp.o: \
  /usr/local/include/glm/gtc/matrix_transform.hpp \
  /usr/local/include/glm/gtc/matrix_transform.inl \
  /home/stevica/openGL_projects/breakout/game.h \
+ /home/stevica/openGL_projects/breakout/game_level.h \
+ /home/stevica/openGL_projects/breakout/game_object.h \
+ /home/stevica/openGL_projects/breakout/texture.h \
+ /home/stevica/openGL_projects/breakout/sprite_renderer.h \
+ /home/stevica/openGL_projects/breakout/shader.h \
  /home/stevica/openGL_projects/breakout/resource_manager.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
@@ -375,6 +380,13 @@ CMakeFiles/my_opengl_project.dir/main.cpp.o: \
  /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h \
- /home/stevica/openGL_projects/breakout/texture.h \
- /home/stevica/openGL_projects/breakout/shader.h
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/fstream \
+ /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/sstream \
+ /usr/include/c++/11/bits/sstream.tcc

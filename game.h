@@ -1,8 +1,13 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include "game_level.h"
+#include "shader.h"
+#include "resource_manager.h"
+#include "sprite_renderer.h"
 #include "glad.h"
 #include <GLFW/glfw3.h>
+#include <vector>
 
 // Represents the current state of the game
 enum GameState {
@@ -22,6 +27,8 @@ public:
     bool                    Keys[1024];
     unsigned int            Width;
     unsigned int            Height;
+    std::vector<GameLevel>  Levels;
+    unsigned int            Level;
     // constructor/destructor
     Game(unsigned int width, unsigned int height);
     ~Game();
