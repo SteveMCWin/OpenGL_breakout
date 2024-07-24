@@ -8,11 +8,13 @@
 #include "resource_manager.h"
 #include "sprite_renderer.h"
 #include "particle_generator.h"
+#include "post_processor.h"
 #include "glad.h"
 #include <GLFW/glfw3.h>
 #include <cfenv>
 #include <tuple>
 #include <vector>
+#include <algorithm>
 
 // Represents the current state of the game
 enum GameState {

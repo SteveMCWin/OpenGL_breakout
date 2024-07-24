@@ -1,14 +1,13 @@
 #include "game.h"
-#include "particle_generator.h"
-#include "resource_manager.h"
-#include <algorithm>
-#include <tuple>
-
+#include "post_processor.h"
 
 SpriteRenderer      *Renderer;
 GameObject          *Player;
 BallObject          *Ball;
 ParticleGenerator   *Particles;
+PostProcessor       *Effects;
+
+float ShakeTime = 0.0f;
 
 // Initial size of the player paddle
 const glm::vec2 PLAYER_SIZE(100.0f, 20.0f);
@@ -40,6 +39,9 @@ void Game::Init(){
     ResourceManager::LoadShader("/home/stevica/openGL_projects/breakout/shaders/v_particle.glsl",
                                 "/home/stevica/openGL_projects/breakout/shaders/f_particle.glsl",
                                 nullptr, "particle");
+    ResourceManager::LoadShader("/home/stevica/openGL_projects/breakout/shaders/v_post_processing.glsl",
+                                "/home/stevica/openGL_projects/breakout/shaders/f_post_processing.glsl",
+                                nullptr, "post_processing");
 
     // configure shaders  
     glm::mat4 projection = glm::ortho(0.0f, static_cast<float>(this->Width), static_cast<float>(this->Height), 0.0f, -1.0f, 1.0f);
@@ -86,6 +88,8 @@ void Game::Init(){
 
     Particles = new ParticleGenerator(ResourceManager::GetShader("particle"), ResourceManager::GetTexture("particle"), 500);
 
+    Effects = new PostProcessor(ResourceManager::GetShader("post_processing"), this->Width, this->Height);
+
 }
 
 void Game::Update(float dt){
@@ -109,6 +113,12 @@ void Game::Update(float dt){
     }
     
     Particles->Update(dt, *Ball, 2, glm::vec2(Ball->Radius / 2.0f));
+
+    if(ShakeTime >= 0.0f){
+        ShakeTime -= dt;
+        if(ShakeTime <= 0.0f)
+            Effects->Shake = false;
+    }
 }
 
 void Game::ProcessInput(float dt){
@@ -140,6 +150,8 @@ void Game::ProcessInput(float dt){
 void Game::Render(){
     if(this->State == GAME_ACTIVE){
 
+        Effects->BeginRender();
+
         // draw background
         Renderer->DrawSprite(ResourceManager::GetTexture("background"), glm::vec2(0.0f, 0.0f), glm::vec2(this->Width, this->Height), 0.0f);
 
@@ -154,6 +166,9 @@ void Game::Render(){
 
         // draw the ball
         Ball->Draw(*Renderer);
+
+        Effects->EndRender();
+        Effects->Render(glfwGetTime());
     }
 }
 
@@ -213,6 +228,10 @@ void Game::DoCollisions(){
                 // destroy block if not solid
                 if(!box.IsSolid){
                     box.Destroyed = true;
+                }
+                else{
+                    ShakeTime = 0.05f;
+                    Effects->Shake = true;
                 }
                 
                 Direction dir = std::get<1>(collision);

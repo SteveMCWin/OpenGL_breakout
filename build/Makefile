@@ -297,6 +297,30 @@ particle_generator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/particle_generator.cpp.s
 .PHONY : particle_generator.cpp.s
 
+post_processor.o: post_processor.cpp.o
+.PHONY : post_processor.o
+
+# target to build an object file
+post_processor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/post_processor.cpp.o
+.PHONY : post_processor.cpp.o
+
+post_processor.i: post_processor.cpp.i
+.PHONY : post_processor.i
+
+# target to preprocess a source file
+post_processor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/post_processor.cpp.i
+.PHONY : post_processor.cpp.i
+
+post_processor.s: post_processor.cpp.s
+.PHONY : post_processor.s
+
+# target to generate assembly for a file
+post_processor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/post_processor.cpp.s
+.PHONY : post_processor.cpp.s
+
 resource_manager.o: resource_manager.cpp.o
 .PHONY : resource_manager.o
 
@@ -447,6 +471,9 @@ help:
 	@echo "... particle_generator.o"
 	@echo "... particle_generator.i"
 	@echo "... particle_generator.s"
+	@echo "... post_processor.o"
+	@echo "... post_processor.i"
+	@echo "... post_processor.s"
 	@echo "... resource_manager.o"
 	@echo "... resource_manager.i"
 	@echo "... resource_manager.s"

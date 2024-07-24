@@ -22,7 +22,8 @@ add_executable(my_opengl_project
     game_object.cpp
     game_level.cpp
     ball_object.cpp
-    particle_generator.cpp)
+    particle_generator.cpp
+    post_processor.cpp)
 
 # assimp/code/Common/material.cpp assimp/code/Common/Importer.h assimp/code/Common/Importer.cpp assimp/code/Common/scene.cpp
 

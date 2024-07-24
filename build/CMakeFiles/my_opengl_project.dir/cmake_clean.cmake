@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_opengl_project.dir/main.cpp.o.d"
   "CMakeFiles/my_opengl_project.dir/particle_generator.cpp.o"
   "CMakeFiles/my_opengl_project.dir/particle_generator.cpp.o.d"
+  "CMakeFiles/my_opengl_project.dir/post_processor.cpp.o"
+  "CMakeFiles/my_opengl_project.dir/post_processor.cpp.o.d"
   "CMakeFiles/my_opengl_project.dir/resource_manager.cpp.o"
   "CMakeFiles/my_opengl_project.dir/resource_manager.cpp.o.d"
   "CMakeFiles/my_opengl_project.dir/shader.cpp.o"

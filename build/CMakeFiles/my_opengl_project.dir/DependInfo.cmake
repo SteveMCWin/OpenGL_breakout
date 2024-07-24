@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/stevica/openGL_projects/breakout/game_object.cpp" "CMakeFiles/my_opengl_project.dir/game_object.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/game_object.cpp.o.d"
   "/home/stevica/openGL_projects/breakout/main.cpp" "CMakeFiles/my_opengl_project.dir/main.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/main.cpp.o.d"
   "/home/stevica/openGL_projects/breakout/particle_generator.cpp" "CMakeFiles/my_opengl_project.dir/particle_generator.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/particle_generator.cpp.o.d"
+  "/home/stevica/openGL_projects/breakout/post_processor.cpp" "CMakeFiles/my_opengl_project.dir/post_processor.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/post_processor.cpp.o.d"
   "/home/stevica/openGL_projects/breakout/resource_manager.cpp" "CMakeFiles/my_opengl_project.dir/resource_manager.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/resource_manager.cpp.o.d"
   "/home/stevica/openGL_projects/breakout/shader.cpp" "CMakeFiles/my_opengl_project.dir/shader.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/shader.cpp.o.d"
   "/home/stevica/openGL_projects/breakout/sprite_renderer.cpp" "CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.o.d"
