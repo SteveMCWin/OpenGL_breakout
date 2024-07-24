@@ -2,11 +2,15 @@
 #define GAME_H
 
 #include "game_level.h"
+#include "game_object.h"
+#include "ball_object.h"
 #include "shader.h"
 #include "resource_manager.h"
 #include "sprite_renderer.h"
 #include "glad.h"
 #include <GLFW/glfw3.h>
+#include <cfenv>
+#include <tuple>
 #include <vector>
 
 // Represents the current state of the game
@@ -16,11 +20,19 @@ enum GameState {
     GAME_WIN
 };
 
+enum Direction {
+    UP,
+    RIGHT,
+    DOWN,
+    LEFT
+};
+
+typedef std::tuple<bool, Direction, glm::vec2> Collision;
+
 // Game holds all game-related state and functionality.
 // Combines all game-related data into a single class for
 // easy access to each of the components and manageability.
-class Game
-{
+class Game {
 public:
     // game state
     GameState               State;	
@@ -38,6 +50,11 @@ public:
     void ProcessInput(float dt);
     void Update(float dt);
     void Render();
+
+    void DoCollisions();
+
+    void ResetLevel();
+    void ResetPlayer();
 };
 
 #endif
