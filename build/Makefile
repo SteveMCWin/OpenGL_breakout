@@ -129,6 +129,30 @@ my_opengl_project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/build
 .PHONY : my_opengl_project/fast
 
+ball_object.o: ball_object.cpp.o
+.PHONY : ball_object.o
+
+# target to build an object file
+ball_object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/ball_object.cpp.o
+.PHONY : ball_object.cpp.o
+
+ball_object.i: ball_object.cpp.i
+.PHONY : ball_object.i
+
+# target to preprocess a source file
+ball_object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/ball_object.cpp.i
+.PHONY : ball_object.cpp.i
+
+ball_object.s: ball_object.cpp.s
+.PHONY : ball_object.s
+
+# target to generate assembly for a file
+ball_object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/ball_object.cpp.s
+.PHONY : ball_object.cpp.s
+
 game.o: game.cpp.o
 .PHONY : game.o
 
@@ -378,6 +402,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... my_opengl_project"
+	@echo "... ball_object.o"
+	@echo "... ball_object.i"
+	@echo "... ball_object.s"
 	@echo "... game.o"
 	@echo "... game.i"
 	@echo "... game.s"

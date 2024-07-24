@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/my_opengl_project.dir/ball_object.cpp.o"
+  "CMakeFiles/my_opengl_project.dir/ball_object.cpp.o.d"
   "CMakeFiles/my_opengl_project.dir/game.cpp.o"
   "CMakeFiles/my_opengl_project.dir/game.cpp.o.d"
   "CMakeFiles/my_opengl_project.dir/game_level.cpp.o"

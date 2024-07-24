@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/stevica/openGL_projects/breakout/glad.c" "CMakeFiles/my_opengl_project.dir/glad.c.o" "gcc" "CMakeFiles/my_opengl_project.dir/glad.c.o.d"
+  "/home/stevica/openGL_projects/breakout/ball_object.cpp" "CMakeFiles/my_opengl_project.dir/ball_object.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/ball_object.cpp.o.d"
   "/home/stevica/openGL_projects/breakout/game.cpp" "CMakeFiles/my_opengl_project.dir/game.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/game.cpp.o.d"
   "/home/stevica/openGL_projects/breakout/game_level.cpp" "CMakeFiles/my_opengl_project.dir/game_level.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/game_level.cpp.o.d"
   "/home/stevica/openGL_projects/breakout/game_object.cpp" "CMakeFiles/my_opengl_project.dir/game_object.cpp.o" "gcc" "CMakeFiles/my_opengl_project.dir/game_object.cpp.o.d"
