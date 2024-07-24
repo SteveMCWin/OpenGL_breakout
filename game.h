@@ -41,11 +41,15 @@ public:
     unsigned int            Height;
     std::vector<GameLevel>  Levels;
     unsigned int            Level;
+    int                     Lives;
+
     // constructor/destructor
     Game(unsigned int width, unsigned int height);
     ~Game();
+
     // initialize game state (load all shaders/textures/levels)
     void Init();
+
     // game loop
     void ProcessInput(float dt);
     void Update(float dt);

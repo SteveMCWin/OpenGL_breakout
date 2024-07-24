@@ -19,7 +19,7 @@ const float BALL_RADIUS = 12.5f;
 
 
 Game::Game(unsigned int width, unsigned int height) 
-    : State(GAME_ACTIVE), Keys(), Width(width), Height(height){ 
+    : State(GAME_ACTIVE), Keys(), Width(width), Height(height), Lives(2){ 
 
 }
 
@@ -83,8 +83,15 @@ void Game::Update(float dt){
     this->DoCollisions();
 
     if(Ball->Position.y >= this->Height){
-        this->ResetLevel();
-        this->ResetPlayer();
+        if(this->Lives <= 0){
+            this->Lives = 2;
+            this->ResetLevel();
+            this->ResetPlayer();
+        }
+        else{
+            this->Lives -= 1;
+            this->ResetPlayer();
+        }
     }
     
 }
@@ -212,6 +219,12 @@ void Game::DoCollisions(){
                     else 
                         Ball->Position.y += penetration;
                 }
+
+                if(this->Levels[Level].IsCompleted()){
+                    this->Level = (this->Level + 1) % static_cast<int>(this->Levels.size());
+                    this->ResetLevel();
+                    this->ResetPlayer();
+                }
             }
         }
     }
@@ -250,3 +263,8 @@ void Game::ResetPlayer(){
                                  this->Height       - PLAYER_SIZE.y * 1.5f);
     Ball->Reset(Player->Position + glm::vec2(PLAYER_SIZE.x / 2.0f - BALL_RADIUS, -(BALL_RADIUS * 2.0f)), INITIAL_BALL_VELOCITY);
 }
+
+
+
+
+
