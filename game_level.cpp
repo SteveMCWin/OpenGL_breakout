@@ -1,8 +1,10 @@
 #include "game_level.h"
 
 void GameLevel::Load(const char *file, unsigned int levelWidth, unsigned int levelHeight){
+
     // clear old data
     this->Bricks.clear();
+
     // load from file
     unsigned int tileCode;
     GameLevel level;

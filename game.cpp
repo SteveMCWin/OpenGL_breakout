@@ -1,11 +1,14 @@
 #include "game.h"
+#include "particle_generator.h"
+#include "resource_manager.h"
 #include <algorithm>
 #include <tuple>
 
 
-SpriteRenderer  *Renderer;
-GameObject      *Player;
-BallObject      *Ball;
+SpriteRenderer      *Renderer;
+GameObject          *Player;
+BallObject          *Ball;
+ParticleGenerator   *Particles;
 
 // Initial size of the player paddle
 const glm::vec2 PLAYER_SIZE(100.0f, 20.0f);
@@ -16,7 +19,8 @@ const glm::vec2 INITIAL_BALL_VELOCITY(100.0f, -350.0f);
 // Radius of the ball object
 const float BALL_RADIUS = 12.5f;
 
-
+unsigned int nr_particles = 500;
+std::vector<Particle> particles;
 
 Game::Game(unsigned int width, unsigned int height) 
     : State(GAME_ACTIVE), Keys(), Width(width), Height(height), Lives(2){ 
@@ -30,12 +34,19 @@ Game::~Game(){
 void Game::Init(){
 
     // load shaders
-    ResourceManager::LoadShader("/home/stevica/openGL_projects/breakout/shaders/v_sprite.glsl", "/home/stevica/openGL_projects/breakout/shaders/f_sprite.glsl", nullptr, "sprite");
+    ResourceManager::LoadShader("/home/stevica/openGL_projects/breakout/shaders/v_sprite.glsl",
+                                "/home/stevica/openGL_projects/breakout/shaders/f_sprite.glsl",
+                                nullptr, "sprite");
+    ResourceManager::LoadShader("/home/stevica/openGL_projects/breakout/shaders/v_particle.glsl",
+                                "/home/stevica/openGL_projects/breakout/shaders/f_particle.glsl",
+                                nullptr, "particle");
 
     // configure shaders  
     glm::mat4 projection = glm::ortho(0.0f, static_cast<float>(this->Width), static_cast<float>(this->Height), 0.0f, -1.0f, 1.0f);
     ResourceManager::GetShader("sprite").Use().SetInteger("image", 0);
     ResourceManager::GetShader("sprite").Use().SetMatrix4("projection", projection);
+    ResourceManager::GetShader("particle").Use().SetInteger("image", 0);
+    ResourceManager::GetShader("particle").Use().SetMatrix4("projection", projection);
 
     // set render specific controls
     Renderer = new SpriteRenderer(ResourceManager::GetShader("sprite"));
@@ -46,6 +57,7 @@ void Game::Init(){
     ResourceManager::LoadTexture("/home/stevica/openGL_projects/breakout/sprites/block.png", false, "block");
     ResourceManager::LoadTexture("/home/stevica/openGL_projects/breakout/sprites/block_solid.png", false, "block_solid");
     ResourceManager::LoadTexture("/home/stevica/openGL_projects/breakout/sprites/paddle.png", true, "paddle");
+    ResourceManager::LoadTexture("/home/stevica/openGL_projects/breakout/sprites/particle.png", true, "particle");
 
     // load levels
     GameLevel one;
@@ -72,6 +84,8 @@ void Game::Init(){
 
     Ball = new BallObject(ballPos, BALL_RADIUS, INITIAL_BALL_VELOCITY, ResourceManager::GetTexture("face"));
 
+    Particles = new ParticleGenerator(ResourceManager::GetShader("particle"), ResourceManager::GetTexture("particle"), 500);
+
 }
 
 void Game::Update(float dt){
@@ -94,6 +108,7 @@ void Game::Update(float dt){
         }
     }
     
+    Particles->Update(dt, *Ball, 2, glm::vec2(Ball->Radius / 2.0f));
 }
 
 void Game::ProcessInput(float dt){
@@ -133,6 +148,9 @@ void Game::Render(){
 
         // draw player
         Player->Draw(*Renderer);
+
+        // draw the particles
+        Particles->Draw();
 
         // draw the ball
         Ball->Draw(*Renderer);

@@ -7,6 +7,7 @@
 #include "shader.h"
 #include "resource_manager.h"
 #include "sprite_renderer.h"
+#include "particle_generator.h"
 #include "glad.h"
 #include <GLFW/glfw3.h>
 #include <cfenv>
@@ -26,6 +27,8 @@ enum Direction {
     DOWN,
     LEFT
 };
+
+
 
 typedef std::tuple<bool, Direction, glm::vec2> Collision;
 
