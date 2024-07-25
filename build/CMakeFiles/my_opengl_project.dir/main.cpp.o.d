@@ -366,6 +366,28 @@ CMakeFiles/my_opengl_project.dir/main.cpp.o: \
  /usr/local/include/glm/gtc/matrix_transform.hpp \
  /usr/local/include/glm/gtc/matrix_transform.inl \
  /home/stevica/openGL_projects/breakout/game.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/irrKlang.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_irrKlangTypes.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_vec3d.h \
+ /usr/include/c++/11/math.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_IRefCounted.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_IVirtualRefCounted.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ESoundOutputDrivers.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ESoundEngineOptions.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_EStreamModes.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_SAudioStreamFormat.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ISoundEngine.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ISoundSource.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ISound.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ISoundEffectControl.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_IFileFactory.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ISoundMixedOutputReceiver.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_IAudioStream.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_IAudioStreamLoader.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_IFileReader.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ISoundStopEventReceiver.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ISoundDeviceList.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_IAudioRecorder.h \
  /home/stevica/openGL_projects/breakout/game_level.h \
  /home/stevica/openGL_projects/breakout/game_object.h \
  /home/stevica/openGL_projects/breakout/texture.h \

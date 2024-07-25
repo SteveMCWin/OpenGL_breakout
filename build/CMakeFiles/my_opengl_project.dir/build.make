@@ -284,6 +284,7 @@ my_opengl_project: CMakeFiles/my_opengl_project.dir/ball_object.cpp.o
 my_opengl_project: CMakeFiles/my_opengl_project.dir/particle_generator.cpp.o
 my_opengl_project: CMakeFiles/my_opengl_project.dir/post_processor.cpp.o
 my_opengl_project: CMakeFiles/my_opengl_project.dir/build.make
+my_opengl_project: ../irrKlang/bin/linux-gcc-64/libIrrKlang.so
 my_opengl_project: /usr/lib/x86_64-linux-gnu/libGLX.so
 my_opengl_project: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 my_opengl_project: CMakeFiles/my_opengl_project.dir/link.txt

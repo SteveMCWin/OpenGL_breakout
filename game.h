@@ -1,6 +1,7 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include "irrKlang/include/irrKlang.h"
 #include "game_level.h"
 #include "game_object.h"
 #include "ball_object.h"

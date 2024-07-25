@@ -1,10 +1,9 @@
 CMakeFiles/my_opengl_project.dir/game.cpp.o: \
  /home/stevica/openGL_projects/breakout/game.cpp \
  /usr/include/stdc-predef.h /home/stevica/openGL_projects/breakout/game.h \
- /home/stevica/openGL_projects/breakout/game_level.h \
- /home/stevica/openGL_projects/breakout/glad.h \
- /usr/include/KHR/khrplatform.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/irrKlang.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_irrKlangTypes.h \
+ /usr/include/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -13,25 +12,31 @@ CMakeFiles/my_opengl_project.dir/game.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/long-double.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/stevica/openGL_projects/breakout/game_object.h \
- /usr/local/include/glm/glm.hpp /usr/local/include/glm/detail/_fixes.hpp \
- /usr/include/c++/11/cmath \
+ /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_vec3d.h \
+ /usr/include/c++/11/math.h /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
  /usr/include/c++/11/pstl/pstl_config.h \
  /usr/include/c++/11/bits/cpp_type_traits.h \
  /usr/include/c++/11/ext/type_traits.h /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/floatn.h \
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
@@ -40,16 +45,14 @@ CMakeFiles/my_opengl_project.dir/game.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/include/c++/11/bits/std_abs.h /usr/include/stdlib.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endianness.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
@@ -92,7 +95,33 @@ CMakeFiles/my_opengl_project.dir/game.cpp.o: \
  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc /usr/include/c++/11/climits \
+ /usr/include/c++/11/tr1/riemann_zeta.tcc \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_IRefCounted.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_IVirtualRefCounted.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ESoundOutputDrivers.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ESoundEngineOptions.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_EStreamModes.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_SAudioStreamFormat.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ISoundEngine.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ISoundSource.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ISound.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ISoundEffectControl.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_IFileFactory.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ISoundMixedOutputReceiver.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_IAudioStream.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_IAudioStreamLoader.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_IFileReader.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ISoundStopEventReceiver.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ISoundDeviceList.h \
+ /home/stevica/openGL_projects/breakout/irrKlang/include/ik_IAudioRecorder.h \
+ /home/stevica/openGL_projects/breakout/game_level.h \
+ /home/stevica/openGL_projects/breakout/glad.h \
+ /usr/include/KHR/khrplatform.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /home/stevica/openGL_projects/breakout/game_object.h \
+ /usr/local/include/glm/glm.hpp /usr/local/include/glm/detail/_fixes.hpp \
+ /usr/include/c++/11/climits \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -284,12 +313,6 @@ CMakeFiles/my_opengl_project.dir/game.cpp.o: \
  /usr/include/c++/11/bits/memoryfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
- /usr/include/wchar.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
  /usr/include/c++/11/bits/allocator.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
  /usr/include/c++/11/ext/new_allocator.h /usr/include/c++/11/new \

@@ -1,12 +1,14 @@
 #include "game.h"
-#include "power_up.h"
-#include "resource_manager.h"
+#include "irrKlang/include/irrKlang.h"
+
+using namespace irrklang;
 
 SpriteRenderer      *Renderer;
 GameObject          *Player;
 BallObject          *Ball;
 ParticleGenerator   *Particles;
 PostProcessor       *Effects;
+ISoundEngine        *SoundEngine;
 
 float ShakeTime = 0.0f;
 
@@ -97,6 +99,8 @@ void Game::Init(){
 
     Effects = new PostProcessor(ResourceManager::GetShader("post_processing"), this->Width, this->Height);
 
+    SoundEngine = createIrrKlangDevice();
+    SoundEngine -> play2D("/home/stevica/openGL_projects/breakout/audio/breakout.ogg", true);
 }
 
 void Game::Update(float dt){
@@ -272,10 +276,12 @@ void Game::DoCollisions(){
                 if(!box.IsSolid){
                     box.Destroyed = true;
                     this->SpawnPowerUps(box);
+                    SoundEngine->play2D("/home/stevica/openGL_projects/breakout/audio/bleep.ogg", false);
                 }
                 else{
                     ShakeTime = 0.05f;
                     Effects->Shake = true;
+                    SoundEngine->play2D("/home/stevica/openGL_projects/breakout/audio/solid.wav", false);
                 }
                 
                 Direction dir = std::get<1>(collision);
@@ -328,6 +334,8 @@ void Game::DoCollisions(){
         Ball->Velocity = glm::normalize(Ball->Velocity) * glm::length(oldVelocity);
 
         Ball->Stuck = Ball->Sticky;
+
+        SoundEngine->play2D("/home/stevica/openGL_projects/breakout/audio/bleep.wav", false);
     }
 
     for(PowerUp &powerUp : this->PowerUps){
@@ -337,6 +345,7 @@ void Game::DoCollisions(){
 
             Collision powerUpCollision = CheckCollision(*Player, powerUp);
             if(std::get<0>(powerUpCollision)){
+                SoundEngine->play2D("/home/stevica/openGL_projects/breakout/audio/powerup.wav", false);
                 ActivatePowerUp(powerUp);
                 powerUp.Destroyed = true;
                 powerUp.Activated = true;

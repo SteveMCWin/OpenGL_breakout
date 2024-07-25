@@ -27,4 +27,4 @@ add_executable(my_opengl_project
 
 # assimp/code/Common/material.cpp assimp/code/Common/Importer.h assimp/code/Common/Importer.cpp assimp/code/Common/scene.cpp
 
-target_link_libraries(my_opengl_project glfw OpenGL::GL)
+target_link_libraries(my_opengl_project glfw OpenGL::GL /home/stevica/openGL_projects/breakout/irrKlang/bin/linux-gcc-64/libIrrKlang.so)

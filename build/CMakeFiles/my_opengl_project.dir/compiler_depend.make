@@ -391,11 +391,9 @@ CMakeFiles/my_opengl_project.dir/ball_object.cpp.o: ../ball_object.cpp \
 CMakeFiles/my_opengl_project.dir/game.cpp.o: ../game.cpp \
   /usr/include/stdc-predef.h \
   ../game.h \
-  ../game_level.h \
-  ../glad.h \
-  /usr/include/KHR/khrplatform.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
+  ../irrKlang/include/irrKlang.h \
+  ../irrKlang/include/ik_irrKlangTypes.h \
+  /usr/include/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/features.h \
   /usr/include/features-time64.h \
@@ -405,15 +403,20 @@ CMakeFiles/my_opengl_project.dir/game.cpp.o: ../game.cpp \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  ../game_object.h \
-  /usr/local/include/glm/glm.hpp \
-  /usr/local/include/glm/detail/_fixes.hpp \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  ../irrKlang/include/ik_vec3d.h \
+  /usr/include/c++/11/math.h \
   /usr/include/c++/11/cmath \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -422,10 +425,11 @@ CMakeFiles/my_opengl_project.dir/game.cpp.o: ../game.cpp \
   /usr/include/c++/11/bits/cpp_type_traits.h \
   /usr/include/c++/11/ext/type_traits.h \
   /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
   /usr/include/x86_64-linux-gnu/bits/math-vector.h \
   /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
   /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
   /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
@@ -435,16 +439,14 @@ CMakeFiles/my_opengl_project.dir/game.cpp.o: ../game.cpp \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/stdlib.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endianness.h \
@@ -493,6 +495,33 @@ CMakeFiles/my_opengl_project.dir/game.cpp.o: ../game.cpp \
   /usr/include/c++/11/tr1/poly_hermite.tcc \
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
+  ../irrKlang/include/ik_IRefCounted.h \
+  ../irrKlang/include/ik_IVirtualRefCounted.h \
+  ../irrKlang/include/ik_ESoundOutputDrivers.h \
+  ../irrKlang/include/ik_ESoundEngineOptions.h \
+  ../irrKlang/include/ik_EStreamModes.h \
+  ../irrKlang/include/ik_SAudioStreamFormat.h \
+  ../irrKlang/include/ik_ISoundEngine.h \
+  ../irrKlang/include/ik_ISoundSource.h \
+  ../irrKlang/include/ik_ISound.h \
+  ../irrKlang/include/ik_ISoundEffectControl.h \
+  ../irrKlang/include/ik_IFileFactory.h \
+  ../irrKlang/include/ik_ISoundMixedOutputReceiver.h \
+  ../irrKlang/include/ik_IAudioStream.h \
+  ../irrKlang/include/ik_IAudioStreamLoader.h \
+  ../irrKlang/include/ik_IFileReader.h \
+  ../irrKlang/include/ik_ISoundStopEventReceiver.h \
+  ../irrKlang/include/ik_ISoundDeviceList.h \
+  ../irrKlang/include/ik_IAudioRecorder.h \
+  ../game_level.h \
+  ../glad.h \
+  /usr/include/KHR/khrplatform.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  ../game_object.h \
+  /usr/local/include/glm/glm.hpp \
+  /usr/local/include/glm/detail/_fixes.hpp \
   /usr/include/c++/11/climits \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
@@ -694,13 +723,6 @@ CMakeFiles/my_opengl_project.dir/game.cpp.o: ../game.cpp \
   /usr/include/c++/11/bits/char_traits.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/cwchar \
-  /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/c++/11/bits/allocator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
   /usr/include/c++/11/ext/new_allocator.h \
@@ -2162,6 +2184,28 @@ CMakeFiles/my_opengl_project.dir/main.cpp.o: ../main.cpp \
   /usr/local/include/glm/gtc/matrix_transform.hpp \
   /usr/local/include/glm/gtc/matrix_transform.inl \
   ../game.h \
+  ../irrKlang/include/irrKlang.h \
+  ../irrKlang/include/ik_irrKlangTypes.h \
+  ../irrKlang/include/ik_vec3d.h \
+  /usr/include/c++/11/math.h \
+  ../irrKlang/include/ik_IRefCounted.h \
+  ../irrKlang/include/ik_IVirtualRefCounted.h \
+  ../irrKlang/include/ik_ESoundOutputDrivers.h \
+  ../irrKlang/include/ik_ESoundEngineOptions.h \
+  ../irrKlang/include/ik_EStreamModes.h \
+  ../irrKlang/include/ik_SAudioStreamFormat.h \
+  ../irrKlang/include/ik_ISoundEngine.h \
+  ../irrKlang/include/ik_ISoundSource.h \
+  ../irrKlang/include/ik_ISound.h \
+  ../irrKlang/include/ik_ISoundEffectControl.h \
+  ../irrKlang/include/ik_IFileFactory.h \
+  ../irrKlang/include/ik_ISoundMixedOutputReceiver.h \
+  ../irrKlang/include/ik_IAudioStream.h \
+  ../irrKlang/include/ik_IAudioStreamLoader.h \
+  ../irrKlang/include/ik_IFileReader.h \
+  ../irrKlang/include/ik_ISoundStopEventReceiver.h \
+  ../irrKlang/include/ik_ISoundDeviceList.h \
+  ../irrKlang/include/ik_IAudioRecorder.h \
   ../game_level.h \
   ../game_object.h \
   ../texture.h \
@@ -4570,8 +4614,6 @@ CMakeFiles/my_opengl_project.dir/texture.cpp.o: ../texture.cpp \
 
 ../texture.cpp:
 
-/usr/include/c++/11/math.h:
-
 ../stb_image.h:
 
 ../particle_generator.cpp:
@@ -4626,10 +4668,6 @@ CMakeFiles/my_opengl_project.dir/texture.cpp.o: ../texture.cpp \
 
 /usr/include/c++/11/bits/locale_classes.tcc:
 
-/usr/include/c++/11/bits/locale_classes.h:
-
-/usr/include/c++/11/bits/nested_exception.h:
-
 /usr/include/c++/11/bits/cxxabi_init_exception.h:
 
 /usr/include/c++/11/bits/exception_ptr.h:
@@ -4663,6 +4701,38 @@ CMakeFiles/my_opengl_project.dir/texture.cpp.o: ../texture.cpp \
 /usr/include/c++/11/map:
 
 ../game_level.h:
+
+../irrKlang/include/ik_ISoundStopEventReceiver.h:
+
+/usr/include/c++/11/bits/nested_exception.h:
+
+../irrKlang/include/ik_IFileReader.h:
+
+../irrKlang/include/ik_IAudioStreamLoader.h:
+
+../irrKlang/include/ik_IAudioStream.h:
+
+../irrKlang/include/ik_ISoundMixedOutputReceiver.h:
+
+/usr/include/c++/11/bits/locale_classes.h:
+
+../irrKlang/include/ik_ISound.h:
+
+../irrKlang/include/ik_ISoundSource.h:
+
+../irrKlang/include/ik_ISoundEngine.h:
+
+../irrKlang/include/ik_SAudioStreamFormat.h:
+
+../irrKlang/include/ik_EStreamModes.h:
+
+../irrKlang/include/ik_ESoundOutputDrivers.h:
+
+../irrKlang/include/ik_IVirtualRefCounted.h:
+
+/usr/include/c++/11/math.h:
+
+../irrKlang/include/ik_irrKlangTypes.h:
 
 ../game.h:
 
@@ -4721,6 +4791,8 @@ CMakeFiles/my_opengl_project.dir/texture.cpp.o: ../texture.cpp \
 /usr/include/c++/11/bits/string_view.tcc:
 
 /usr/include/c++/11/bits/functional_hash.h:
+
+../irrKlang/include/ik_ISoundEffectControl.h:
 
 /usr/include/c++/11/bits/stl_construct.h:
 
@@ -4986,6 +5058,8 @@ CMakeFiles/my_opengl_project.dir/texture.cpp.o: ../texture.cpp \
 
 /usr/include/dlfcn.h:
 
+../irrKlang/include/ik_ESoundEngineOptions.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124fmapsintrin.h:
 
 /usr/include/c++/11/bits/vector.tcc:
@@ -5025,6 +5099,8 @@ CMakeFiles/my_opengl_project.dir/texture.cpp.o: ../texture.cpp \
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+../irrKlang/include/ik_IFileFactory.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
@@ -5282,6 +5358,8 @@ CMakeFiles/my_opengl_project.dir/texture.cpp.o: ../texture.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
 
+../irrKlang/include/ik_vec3d.h:
+
 /usr/include/c++/11/stdlib.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/bmi2intrin.h:
@@ -5337,6 +5415,8 @@ CMakeFiles/my_opengl_project.dir/texture.cpp.o: ../texture.cpp \
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/clwbintrin.h:
+
+../irrKlang/include/ik_IRefCounted.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/clzerointrin.h:
 
@@ -5404,6 +5484,8 @@ CMakeFiles/my_opengl_project.dir/texture.cpp.o: ../texture.cpp \
 
 /usr/local/include/glm/detail/func_exponential.inl:
 
+../irrKlang/include/ik_ISoundDeviceList.h:
+
 /usr/local/include/glm/detail/func_vector_relational.hpp:
 
 ../game_object.cpp:
@@ -5411,6 +5493,10 @@ CMakeFiles/my_opengl_project.dir/texture.cpp.o: ../texture.cpp \
 /usr/local/include/glm/vec4.hpp:
 
 /usr/local/include/glm/detail/func_vector_relational_simd.inl:
+
+../irrKlang/include/ik_IAudioRecorder.h:
+
+../irrKlang/include/irrKlang.h:
 
 /usr/local/include/glm/detail/_vectorize.hpp:
 
