@@ -830,6 +830,7 @@ CMakeFiles/my_opengl_project.dir/game.cpp.o: ../game.cpp \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/bits/sstream.tcc \
   ../ball_object.h \
+  ../power_up.h \
   ../particle_generator.h \
   ../post_processor.h \
   /usr/include/GLFW/glfw3.h \
@@ -2193,6 +2194,7 @@ CMakeFiles/my_opengl_project.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/bits/sstream.tcc \
   ../ball_object.h \
+  ../power_up.h \
   ../particle_generator.h \
   ../post_processor.h \
   /usr/include/c++/11/cfenv \
@@ -4733,6 +4735,8 @@ CMakeFiles/my_opengl_project.dir/texture.cpp.o: ../texture.cpp \
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
+
+../power_up.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 

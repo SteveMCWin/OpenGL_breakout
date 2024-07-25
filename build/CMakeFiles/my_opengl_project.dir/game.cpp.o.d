@@ -390,6 +390,7 @@ CMakeFiles/my_opengl_project.dir/game.cpp.o: \
  /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/sstream \
  /usr/include/c++/11/bits/sstream.tcc \
  /home/stevica/openGL_projects/breakout/ball_object.h \
+ /home/stevica/openGL_projects/breakout/power_up.h \
  /home/stevica/openGL_projects/breakout/particle_generator.h \
  /home/stevica/openGL_projects/breakout/post_processor.h \
  /usr/include/GLFW/glfw3.h /usr/include/c++/11/cfenv \

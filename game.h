@@ -4,6 +4,7 @@
 #include "game_level.h"
 #include "game_object.h"
 #include "ball_object.h"
+#include "power_up.h"
 #include "shader.h"
 #include "resource_manager.h"
 #include "sprite_renderer.h"
@@ -47,6 +48,7 @@ public:
     std::vector<GameLevel>  Levels;
     unsigned int            Level;
     int                     Lives;
+    std::vector<PowerUp>    PowerUps;
 
     // constructor/destructor
     Game(unsigned int width, unsigned int height);
@@ -64,6 +66,9 @@ public:
 
     void ResetLevel();
     void ResetPlayer();
+
+    void SpawnPowerUps(GameObject &block);
+    void UpdatePowerUps(float dt);
 };
 
 #endif
