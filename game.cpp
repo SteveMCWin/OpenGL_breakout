@@ -1,5 +1,6 @@
 #include "game.h"
-#include "irrKlang/include/irrKlang.h"
+#include "text_renderer.h"
+#include <GLFW/glfw3.h>
 
 using namespace irrklang;
 
@@ -9,6 +10,7 @@ BallObject          *Ball;
 ParticleGenerator   *Particles;
 PostProcessor       *Effects;
 ISoundEngine        *SoundEngine;
+TextRenderer        *Text;
 
 float ShakeTime = 0.0f;
 
@@ -25,7 +27,7 @@ unsigned int nr_particles = 500;
 std::vector<Particle> particles;
 
 Game::Game(unsigned int width, unsigned int height) 
-    : State(GAME_ACTIVE), Keys(), Width(width), Height(height), Lives(2){ 
+    : State(GAME_MENU), Keys(), Width(width), Height(height), Lives(3){ 
 
 }
 
@@ -99,6 +101,9 @@ void Game::Init(){
 
     Effects = new PostProcessor(ResourceManager::GetShader("post_processing"), this->Width, this->Height);
 
+    Text = new TextRenderer(this->Width, this->Height);
+    Text->Load("/home/stevica/openGL_projects/breakout/fonts/ocraext.TTF", 24);
+
     SoundEngine = createIrrKlangDevice();
     SoundEngine -> play2D("/home/stevica/openGL_projects/breakout/audio/breakout.ogg", true);
 }
@@ -112,15 +117,15 @@ void Game::Update(float dt){
     this->DoCollisions();
 
     if(Ball->Position.y >= this->Height){
+
+        this->Lives -= 1;
+
         if(this->Lives <= 0){
-            this->Lives = 2;
             this->ResetLevel();
-            this->ResetPlayer();
+            this->State = GAME_MENU;
         }
-        else{
-            this->Lives -= 1;
-            this->ResetPlayer();
-        }
+
+        this->ResetPlayer();
     }
 
     this->UpdatePowerUps(dt);
@@ -135,7 +140,7 @@ void Game::Update(float dt){
 }
 
 void Game::ProcessInput(float dt){
-   if(this->State == GAME_ACTIVE){
+    if(this->State == GAME_ACTIVE){
         float velocity = PLAYER_VELOCITY * dt;
 
         // move player
@@ -146,6 +151,7 @@ void Game::ProcessInput(float dt){
                     Ball->Position.x -= velocity;
             }
         }
+
         if(this->Keys[GLFW_KEY_D]){
             if(Player->Position.x <= this->Width - Player->Size.x){
                 Player->Position.x += velocity;
@@ -158,10 +164,36 @@ void Game::ProcessInput(float dt){
         if(this->Keys[GLFW_KEY_SPACE])
             Ball->Stuck = false;
     }
+    else if(this->State == GAME_MENU){
+        if(this->Keys[GLFW_KEY_ENTER] && !this->KeysProcessed[GLFW_KEY_ENTER]){
+            this->State = GAME_ACTIVE;
+            this->KeysProcessed[GLFW_KEY_ENTER] = true;
+        }
+        if(this->Keys[GLFW_KEY_W] && !this->KeysProcessed[GLFW_KEY_W]){
+            this->Level = (this->Level + 1) % 4;
+            this->KeysProcessed[GLFW_KEY_W] = true;
+        }
+        if(this->Keys[GLFW_KEY_S] && !this->KeysProcessed[GLFW_KEY_S]){
+            if(this->Level > 0){
+                --this->Level;
+            }
+            else{
+                this->Level = 3;
+            }
+            this->KeysProcessed[GLFW_KEY_S] = true;
+        }
+    }
+    else if(this->State == GAME_WIN){
+        if(this->Keys[GLFW_KEY_ENTER]){
+            this->KeysProcessed[GLFW_KEY_ENTER] = true;
+            Effects->Chaos = false;
+            this->State = GAME_MENU;
+        }
+    }
 }
 
 void Game::Render(){
-    if(this->State == GAME_ACTIVE){
+    if(this->State == GAME_ACTIVE || this->State == GAME_MENU){
 
         Effects->BeginRender();
 
@@ -188,7 +220,20 @@ void Game::Render(){
 
         Effects->EndRender();
         Effects->Render(glfwGetTime());
+
+        std::stringstream ss;
+        ss << this->Lives;
+        Text->RenderText("Lives: " + ss.str(), 5.0f, 5.0f, 1.0f);
     }
+    if(this->State == GAME_MENU){
+        Text->RenderText("Press ENTER to start", 250.0f, Height / 2.0f, 1.0f);
+        Text->RenderText("Press W or S to select level", 245.0f, Height / 2.0f + 20.0f, 0.75f);
+    }
+    if(this->State == GAME_WIN){
+        Text->RenderText("You WON!!!", 320.0f, Height / 2.0f - 20.0f, 1.0f, glm::vec3(0.0, 1.0, 0.0));
+        Text->RenderText("Press ENTER to retry or ESC to quit", 130.0, Height / 2.0, 1.0, glm::vec3(1.0, 1.0, 1.0));
+    }
+
 }
 
 Direction VectorDirection(glm::vec2 target){
@@ -309,10 +354,12 @@ void Game::DoCollisions(){
                     }
                 }
 
-                if(this->Levels[Level].IsCompleted()){
-                    this->Level = (this->Level + 1) % static_cast<int>(this->Levels.size());
+                if(this->Levels[this->Level].IsCompleted() && this->State == GAME_ACTIVE){
+                    // this->Level = (this->Level + 1) % static_cast<int>(this->Levels.size());
                     this->ResetLevel();
                     this->ResetPlayer();
+                    Effects->Chaos = true;
+                    this->State = GAME_WIN;
                 }
             }
         }
@@ -355,6 +402,7 @@ void Game::DoCollisions(){
 }
 
 void Game::ResetLevel(){
+    this->Lives = 3;
     if(this->Level == 0)
         this->Levels[0].Load("/home/stevica/openGL_projects/breakout/levels/one.lvl", this->Width, this->Height / 2);
     else if(this->Level == 1)

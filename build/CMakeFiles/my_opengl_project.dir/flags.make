@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = 
 
-C_INCLUDES = 
+C_INCLUDES = -I/usr/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/local/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/include/libpng16
 
 C_FLAGS = 
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/usr/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/local/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/include/libpng16
 
 CXX_FLAGS = 
 

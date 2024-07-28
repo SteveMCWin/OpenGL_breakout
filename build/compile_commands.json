@@ -1,0 +1,72 @@
+[
+{
+  "directory": "/home/stevica/openGL_projects/breakout/build",
+  "command": "/usr/bin/c++  -I/usr/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/local/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/include/libpng16  -o CMakeFiles/my_opengl_project.dir/main.cpp.o -c /home/stevica/openGL_projects/breakout/main.cpp",
+  "file": "/home/stevica/openGL_projects/breakout/main.cpp"
+},
+{
+  "directory": "/home/stevica/openGL_projects/breakout/build",
+  "command": "/usr/bin/cc  -I/usr/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/local/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/include/libpng16  -o CMakeFiles/my_opengl_project.dir/glad.c.o -c /home/stevica/openGL_projects/breakout/glad.c",
+  "file": "/home/stevica/openGL_projects/breakout/glad.c"
+},
+{
+  "directory": "/home/stevica/openGL_projects/breakout/build",
+  "command": "/usr/bin/c++  -I/usr/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/local/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/include/libpng16  -o CMakeFiles/my_opengl_project.dir/stb_image.cpp.o -c /home/stevica/openGL_projects/breakout/stb_image.cpp",
+  "file": "/home/stevica/openGL_projects/breakout/stb_image.cpp"
+},
+{
+  "directory": "/home/stevica/openGL_projects/breakout/build",
+  "command": "/usr/bin/c++  -I/usr/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/local/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/include/libpng16  -o CMakeFiles/my_opengl_project.dir/game.cpp.o -c /home/stevica/openGL_projects/breakout/game.cpp",
+  "file": "/home/stevica/openGL_projects/breakout/game.cpp"
+},
+{
+  "directory": "/home/stevica/openGL_projects/breakout/build",
+  "command": "/usr/bin/c++  -I/usr/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/local/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/include/libpng16  -o CMakeFiles/my_opengl_project.dir/resource_manager.cpp.o -c /home/stevica/openGL_projects/breakout/resource_manager.cpp",
+  "file": "/home/stevica/openGL_projects/breakout/resource_manager.cpp"
+},
+{
+  "directory": "/home/stevica/openGL_projects/breakout/build",
+  "command": "/usr/bin/c++  -I/usr/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/local/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/include/libpng16  -o CMakeFiles/my_opengl_project.dir/shader.cpp.o -c /home/stevica/openGL_projects/breakout/shader.cpp",
+  "file": "/home/stevica/openGL_projects/breakout/shader.cpp"
+},
+{
+  "directory": "/home/stevica/openGL_projects/breakout/build",
+  "command": "/usr/bin/c++  -I/usr/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/local/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/include/libpng16  -o CMakeFiles/my_opengl_project.dir/texture.cpp.o -c /home/stevica/openGL_projects/breakout/texture.cpp",
+  "file": "/home/stevica/openGL_projects/breakout/texture.cpp"
+},
+{
+  "directory": "/home/stevica/openGL_projects/breakout/build",
+  "command": "/usr/bin/c++  -I/usr/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/local/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/include/libpng16  -o CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.o -c /home/stevica/openGL_projects/breakout/sprite_renderer.cpp",
+  "file": "/home/stevica/openGL_projects/breakout/sprite_renderer.cpp"
+},
+{
+  "directory": "/home/stevica/openGL_projects/breakout/build",
+  "command": "/usr/bin/c++  -I/usr/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/local/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/include/libpng16  -o CMakeFiles/my_opengl_project.dir/game_object.cpp.o -c /home/stevica/openGL_projects/breakout/game_object.cpp",
+  "file": "/home/stevica/openGL_projects/breakout/game_object.cpp"
+},
+{
+  "directory": "/home/stevica/openGL_projects/breakout/build",
+  "command": "/usr/bin/c++  -I/usr/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/local/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/include/libpng16  -o CMakeFiles/my_opengl_project.dir/game_level.cpp.o -c /home/stevica/openGL_projects/breakout/game_level.cpp",
+  "file": "/home/stevica/openGL_projects/breakout/game_level.cpp"
+},
+{
+  "directory": "/home/stevica/openGL_projects/breakout/build",
+  "command": "/usr/bin/c++  -I/usr/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/local/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/include/libpng16  -o CMakeFiles/my_opengl_project.dir/ball_object.cpp.o -c /home/stevica/openGL_projects/breakout/ball_object.cpp",
+  "file": "/home/stevica/openGL_projects/breakout/ball_object.cpp"
+},
+{
+  "directory": "/home/stevica/openGL_projects/breakout/build",
+  "command": "/usr/bin/c++  -I/usr/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/local/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/include/libpng16  -o CMakeFiles/my_opengl_project.dir/particle_generator.cpp.o -c /home/stevica/openGL_projects/breakout/particle_generator.cpp",
+  "file": "/home/stevica/openGL_projects/breakout/particle_generator.cpp"
+},
+{
+  "directory": "/home/stevica/openGL_projects/breakout/build",
+  "command": "/usr/bin/c++  -I/usr/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/local/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/include/libpng16  -o CMakeFiles/my_opengl_project.dir/post_processor.cpp.o -c /home/stevica/openGL_projects/breakout/post_processor.cpp",
+  "file": "/home/stevica/openGL_projects/breakout/post_processor.cpp"
+},
+{
+  "directory": "/home/stevica/openGL_projects/breakout/build",
+  "command": "/usr/bin/c++  -I/usr/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/local/include/freetype2 -I/home/stevica/openGL_projects/breakout/-I/usr/include/libpng16  -o CMakeFiles/my_opengl_project.dir/text_renderer.cpp.o -c /home/stevica/openGL_projects/breakout/text_renderer.cpp",
+  "file": "/home/stevica/openGL_projects/breakout/text_renderer.cpp"
+}
+]

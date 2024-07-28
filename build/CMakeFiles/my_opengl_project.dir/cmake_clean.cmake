@@ -23,6 +23,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_opengl_project.dir/sprite_renderer.cpp.o.d"
   "CMakeFiles/my_opengl_project.dir/stb_image.cpp.o"
   "CMakeFiles/my_opengl_project.dir/stb_image.cpp.o.d"
+  "CMakeFiles/my_opengl_project.dir/text_renderer.cpp.o"
+  "CMakeFiles/my_opengl_project.dir/text_renderer.cpp.o.d"
   "CMakeFiles/my_opengl_project.dir/texture.cpp.o"
   "CMakeFiles/my_opengl_project.dir/texture.cpp.o.d"
   "my_opengl_project"

@@ -2,6 +2,7 @@
 #define GAME_H
 
 #include "irrKlang/include/irrKlang.h"
+#include "text_renderer.h"
 #include "game_level.h"
 #include "game_object.h"
 #include "ball_object.h"
@@ -17,6 +18,8 @@
 #include <tuple>
 #include <vector>
 #include <algorithm>
+#include <ft2build.h>
+#include FT_FREETYPE_H
 
 // Represents the current state of the game
 enum GameState {
@@ -44,6 +47,7 @@ public:
     // game state
     GameState               State;	
     bool                    Keys[1024];
+    bool                    KeysProcessed[1024];
     unsigned int            Width;
     unsigned int            Height;
     std::vector<GameLevel>  Levels;

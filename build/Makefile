@@ -417,6 +417,30 @@ stb_image.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/stb_image.cpp.s
 .PHONY : stb_image.cpp.s
 
+text_renderer.o: text_renderer.cpp.o
+.PHONY : text_renderer.o
+
+# target to build an object file
+text_renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/text_renderer.cpp.o
+.PHONY : text_renderer.cpp.o
+
+text_renderer.i: text_renderer.cpp.i
+.PHONY : text_renderer.i
+
+# target to preprocess a source file
+text_renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/text_renderer.cpp.i
+.PHONY : text_renderer.cpp.i
+
+text_renderer.s: text_renderer.cpp.s
+.PHONY : text_renderer.s
+
+# target to generate assembly for a file
+text_renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_opengl_project.dir/build.make CMakeFiles/my_opengl_project.dir/text_renderer.cpp.s
+.PHONY : text_renderer.cpp.s
+
 texture.o: texture.cpp.o
 .PHONY : texture.o
 
@@ -486,6 +510,9 @@ help:
 	@echo "... stb_image.o"
 	@echo "... stb_image.i"
 	@echo "... stb_image.s"
+	@echo "... text_renderer.o"
+	@echo "... text_renderer.i"
+	@echo "... text_renderer.s"
 	@echo "... texture.o"
 	@echo "... texture.i"
 	@echo "... texture.s"

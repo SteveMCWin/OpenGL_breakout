@@ -388,12 +388,7 @@ CMakeFiles/my_opengl_project.dir/main.cpp.o: \
  /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ISoundStopEventReceiver.h \
  /home/stevica/openGL_projects/breakout/irrKlang/include/ik_ISoundDeviceList.h \
  /home/stevica/openGL_projects/breakout/irrKlang/include/ik_IAudioRecorder.h \
- /home/stevica/openGL_projects/breakout/game_level.h \
- /home/stevica/openGL_projects/breakout/game_object.h \
- /home/stevica/openGL_projects/breakout/texture.h \
- /home/stevica/openGL_projects/breakout/sprite_renderer.h \
- /home/stevica/openGL_projects/breakout/shader.h \
- /home/stevica/openGL_projects/breakout/resource_manager.h \
+ /home/stevica/openGL_projects/breakout/text_renderer.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/node_handle.h \
@@ -402,8 +397,14 @@ CMakeFiles/my_opengl_project.dir/main.cpp.o: \
  /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/erase_if.h \
+ /home/stevica/openGL_projects/breakout/texture.h \
+ /home/stevica/openGL_projects/breakout/shader.h \
+ /home/stevica/openGL_projects/breakout/game_level.h \
+ /home/stevica/openGL_projects/breakout/game_object.h \
+ /home/stevica/openGL_projects/breakout/sprite_renderer.h \
+ /home/stevica/openGL_projects/breakout/resource_manager.h \
+ /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/fstream \
@@ -430,4 +431,19 @@ CMakeFiles/my_opengl_project.dir/main.cpp.o: \
  /usr/include/c++/11/bits/hashtable_policy.h \
  /usr/include/c++/11/bits/enable_special_members.h \
  /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/pstl/execution_defs.h
+ /usr/include/c++/11/pstl/execution_defs.h \
+ /usr/include/freetype2/ft2build.h \
+ /usr/include/freetype2/freetype/config/ftheader.h \
+ /usr/include/freetype2/freetype/freetype.h \
+ /usr/include/freetype2/freetype/config/ftconfig.h \
+ /usr/include/freetype2/freetype/config/ftoption.h \
+ /usr/include/freetype2/freetype/config/ftstdlib.h /usr/include/setjmp.h \
+ /usr/include/freetype2/freetype/config/integer-types.h \
+ /usr/include/freetype2/freetype/config/public-macros.h \
+ /usr/include/freetype2/freetype/config/mac-support.h \
+ /usr/include/freetype2/freetype/fttypes.h \
+ /usr/include/freetype2/freetype/ftsystem.h \
+ /usr/include/freetype2/freetype/ftimage.h \
+ /usr/include/freetype2/freetype/fterrors.h \
+ /usr/include/freetype2/freetype/ftmoderr.h \
+ /usr/include/freetype2/freetype/fterrdef.h
